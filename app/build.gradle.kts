@@ -51,4 +51,7 @@ dependencies {
     // Splash Screen
     implementation("androidx.core:core-splashscreen:1.0.1")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
+    // dotsindicator
+    implementation("com.tbuonomo:dotsindicator:5.0")
+
 }
