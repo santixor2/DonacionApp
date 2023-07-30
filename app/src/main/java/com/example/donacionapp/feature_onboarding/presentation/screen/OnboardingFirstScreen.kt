@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.viewpager2.widget.ViewPager2
 import com.example.donacionapp.R
 import com.example.donacionapp.databinding.FragmentOnboardingFirstScreenBinding
 
@@ -19,6 +20,10 @@ class OnboardingFirstScreen : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentOnboardingFirstScreenBinding.inflate(inflater, container, false)
+        val viewPager = activity?.findViewById<ViewPager2>(R.id.viewPager)
+        binding?.buttonFirst?.setOnClickListener {
+            viewPager?.currentItem = 1
+        }
         return binding?.root
     }
     override fun onDestroy() {

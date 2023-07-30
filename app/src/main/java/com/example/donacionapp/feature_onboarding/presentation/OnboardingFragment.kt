@@ -6,6 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.donacionapp.databinding.FragmentOnboardingBinding
+import com.example.donacionapp.feature_onboarding.presentation.screen.OnboardingFirstScreen
+import com.example.donacionapp.feature_onboarding.presentation.screen.OnboardingSecondScreen
+import com.example.donacionapp.feature_onboarding.presentation.screen.OnboardingThirdScreen
 
 class OnboardingFragment : Fragment() {
     private var binding: FragmentOnboardingBinding? = null
@@ -18,12 +21,22 @@ class OnboardingFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentOnboardingBinding.inflate(inflater, container, false)
+        setupOnboarding()
+        return binding?.root
+    }
+    private fun setupOnboarding(){
+        val fragmentList = arrayListOf(
+            OnboardingFirstScreen(),
+            OnboardingSecondScreen(),
+            OnboardingThirdScreen()
+        )
+        val adapter = ViewPagerAdapter(fragmentList,requireActivity().supportFragmentManager,lifecycle)
+        binding?.viewPager?.adapter = adapter
         binding?.viewPager?.let {
             binding?.dots?.attachTo(
                 it
             )
         }
-        return binding?.root
     }
     override fun onDestroy() {
         super.onDestroy()

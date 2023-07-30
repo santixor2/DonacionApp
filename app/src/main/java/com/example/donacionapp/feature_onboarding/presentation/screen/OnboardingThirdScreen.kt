@@ -5,9 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.viewpager2.widget.ViewPager2
 import com.example.donacionapp.R
+import com.example.donacionapp.databinding.FragmentOnboardingSecondScreenBinding
+import com.example.donacionapp.databinding.FragmentOnboardingthirdScreenBinding
 
 class OnboardingThirdScreen : Fragment() {
+    private var binding: FragmentOnboardingthirdScreenBinding? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -16,6 +20,11 @@ class OnboardingThirdScreen : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_onboardingthird_screen, container, false)
+        binding = FragmentOnboardingthirdScreenBinding.inflate(inflater, container, false)
+        return binding?.root
+    }
+    override fun onDestroy() {
+        super.onDestroy()
+        binding = null
     }
 }

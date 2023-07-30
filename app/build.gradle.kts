@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    // Safeargs
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -53,5 +55,8 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
     // dotsindicator
     implementation("com.tbuonomo:dotsindicator:5.0")
+    // Navigation
+    implementation ("androidx.navigation:navigation-fragment-ktx:2.6.0")
+    implementation ("androidx.navigation:navigation-ui-ktx:2.6.0")
 
 }
