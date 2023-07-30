@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.example.donacionapp.R
 import com.example.donacionapp.databinding.FragmentOnboardingSecondScreenBinding
@@ -21,6 +22,9 @@ class OnboardingThirdScreen : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentOnboardingthirdScreenBinding.inflate(inflater, container, false)
+        binding?.buttonLogin?.setOnClickListener {
+            findNavController().navigate(R.id.action_onboardingFragment_to_loginFragment)
+        }
         return binding?.root
     }
     override fun onDestroy() {
