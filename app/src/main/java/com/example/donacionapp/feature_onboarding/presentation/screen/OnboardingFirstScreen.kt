@@ -1,16 +1,16 @@
 package com.example.donacionapp.feature_onboarding.presentation.screen
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.example.donacionapp.R
 import com.example.donacionapp.databinding.FragmentOnboardingFirstScreenBinding
 
 class OnboardingFirstScreen : Fragment() {
-    private var binding:FragmentOnboardingFirstScreenBinding? = null
+    private var binding: FragmentOnboardingFirstScreenBinding? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }

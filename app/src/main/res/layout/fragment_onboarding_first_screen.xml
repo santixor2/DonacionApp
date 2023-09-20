@@ -5,6 +5,7 @@
     android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".feature_onboarding.presentation.screen.OnboardingFirstScreen">
 
     <ImageView
@@ -35,21 +36,22 @@
         android:fontFamily="@font/roboto_medium"
         android:text="@string/text_first_onbording"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewFirst" />
 
-    <TextView
-        android:id="@+id/textViewFirstDes"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu tristique tristique quam in."
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="@+id/textViewFirst"
-        app:layout_constraintStart_toStartOf="@+id/textViewFirst"
-        app:layout_constraintTop_toBottomOf="@+id/textViewFirst" />
+<!--    <TextView-->
+<!--        android:id="@+id/textViewFirstDes"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu tristique tristique quam in."-->
+<!--        android:textAlignment="center"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/textViewFirst"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/textViewFirst"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textViewFirst" />-->
 
     <Button
         android:id="@+id/buttonFirst"

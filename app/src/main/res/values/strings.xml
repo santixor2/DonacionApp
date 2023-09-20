@@ -1,7 +1,5 @@
 <resources>
-    <string name="app_name">DonacionApp</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="app_name">NoCountryDonation</string>
     <string name="text_first_onbording">Find Blood Donors</string>
     <string name="button_next">next</string>
     <string name="text_second_onbording">Post A Blood Request</string>
@@ -12,4 +10,30 @@
     <string name="text_forgetpassword">Forgot Password?</string>
     <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
+    <string name="title_toolbard" translatable="false">Buscar Donadores</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string-array name="Blood">
+        <item>0-</item>
+        <item>0+</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B-</item>
+        <item>B+</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+    <string-array name="Citys">
+        <item>Ledesma</item>
+        <item>Fraile Pintado</item>
+        <item>Calilegua</item>
+        <item>Caimancito</item>
+    </string-array>
+    <string-array name="Hospital">
+        <item>Hospital Dr oscar orias Ledesma</item>
+        <item>Clinica Ledesma</item>
+        <item>Clinica San lorenzo</item>
+        <item>Hospital de Calilegua</item>
+        <item>Hospital Presbitero Escolastico Zegada</item>
+    </string-array>
 </resources>

@@ -5,6 +5,7 @@
     android:id="@+id/frameLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".feature_onboarding.presentation.screen.OnboardingSecondScreen">
     <ImageView
         android:id="@+id/imageViewSecond"
@@ -34,21 +35,22 @@
         android:fontFamily="@font/roboto_medium"
         android:text="@string/text_second_onbording"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewSecond" />
 
-    <TextView
-        android:id="@+id/textViewSecondDesc"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu tristique tristique quam in."
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="@+id/textViewSecond"
-        app:layout_constraintStart_toStartOf="@+id/textViewSecond"
-        app:layout_constraintTop_toBottomOf="@+id/textViewSecond" />
+<!--    <TextView-->
+<!--        android:id="@+id/textViewSecondDesc"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu tristique tristique quam in."-->
+<!--        android:textAlignment="center"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/textViewSecond"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/textViewSecond"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textViewSecond" />-->
 
     <Button
         android:id="@+id/buttonSecond"

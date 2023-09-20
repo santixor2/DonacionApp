@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.donacionapp.MainActivity
 import com.example.donacionapp.databinding.FragmentOnboardingBinding
 import com.example.donacionapp.feature_onboarding.presentation.screen.OnboardingFirstScreen
 import com.example.donacionapp.feature_onboarding.presentation.screen.OnboardingSecondScreen
@@ -15,6 +16,7 @@ class OnboardingFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -22,15 +24,18 @@ class OnboardingFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentOnboardingBinding.inflate(inflater, container, false)
         setupOnboarding()
+        (activity as MainActivity).showBottomNav(false)
         return binding?.root
     }
-    private fun setupOnboarding(){
+
+    private fun setupOnboarding() {
         val fragmentList = arrayListOf(
             OnboardingFirstScreen(),
             OnboardingSecondScreen(),
             OnboardingThirdScreen()
         )
-        val adapter = ViewPagerAdapter(fragmentList,requireActivity().supportFragmentManager,lifecycle)
+        val adapter =
+            ViewPagerAdapter(fragmentList, requireActivity().supportFragmentManager, lifecycle)
         binding?.viewPager?.adapter = adapter
         binding?.viewPager?.let {
             binding?.dots?.attachTo(
@@ -38,6 +43,7 @@ class OnboardingFragment : Fragment() {
             )
         }
     }
+
     override fun onDestroy() {
         super.onDestroy()
         binding = null

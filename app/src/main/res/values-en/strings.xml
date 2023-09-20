@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">DonacionApp</string>
+    <string name="app_name">NoCountryDonation</string>
     <string name="text_first_onbording">Find Blood Donors</string>
     <string name="button_next">next</string>
     <string name="text_second_onbording">Post A Blood Request</string>
