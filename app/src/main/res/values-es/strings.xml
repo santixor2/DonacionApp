@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NoCountryDonation</string>
+    <string name="text_first_onbording">Encuentre Donantes de Sangre</string>
+    <string name="button_next">siguiente</string>
+    <string name="text_second_onbording">Publicar una solicitud de sangre</string>
+    <string name="text_third_onbording">Atrevete a donar</string>
+    <string name="text_third_onboarding_description">Puede donar para los necesitados y solicitar sangre si necesita</string>
+    <string name="text_button_login">Iniciar Sesion</string>
+    <string name="text_button_register">Registrarse</string>
+    <string name="text_forgetpassword">¿Has olvidado tu contraseña?</string>
+    <string name="hint_email">Correo Electronico</string>
+    <string name="hint_password">Contraseña</string>
+</resources>

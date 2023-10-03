@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NoCountryDonation</string>
+    <string name="text_first_onbording">Find Blood Donors</string>
+    <string name="button_next">next</string>
+    <string name="text_second_onbording">Post A Blood Request</string>
+    <string name="text_third_onbording">Dare To Donate</string>
+    <string name="text_third_onboarding_description">You can donate for ones in need and request blood if you need.</string>
+    <string name="text_button_login">Login</string>
+    <string name="text_button_register">Register</string>
+    <string name="text_forgetpassword">Forgot Password?</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+</resources>
